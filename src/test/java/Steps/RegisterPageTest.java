@@ -1,0 +1,28 @@
+package Steps;
+
+import BaseLayer.BaseClass;
+import io.cucumber.java.en.Given;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
+
+public class RegisterPageTest extends BaseClass{
+
+	@Given("user is on resister page")
+	public void user_is_on_resister_page() {
+	 
+		BaseClass.initialization();
+		
+	}
+
+	@When("user is enter the valid fname, lname, email, passwd")
+	public void user_is_enter_the_valid_fname_lname_email_passwd() {
+
+	}
+
+	@When("user enter valid date, month, year and gender")
+	public void user_enter_valid_date_month_year_and_gender() {
+
+	}
+	
+}
