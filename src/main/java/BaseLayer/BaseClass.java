@@ -1,8 +1,9 @@
 package BaseLayer;
 
+
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.time.Duration;
 import java.util.Properties;
 
@@ -18,7 +19,7 @@ public class BaseClass {
 	
 	public BaseClass() {
 		
-		File f = new File (System.getProperty("user.dir")+"src\\main\\java\\ConfigLayer\\Config.properties");
+		File f = new File (System.getProperty("user.dir")+"\\src\\main\\java\\ConfigLayer\\Config.properties");
 	    
 		try {
 			FileInputStream fis = new FileInputStream(f);
@@ -42,7 +43,6 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 	    driver.manage().deleteAllCookies();
-	    
 	    driver.get(prop.getProperty("URL"));
 	    
 	    
